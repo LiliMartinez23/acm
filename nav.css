@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
+    p
 }
 
 .nav.scrolled {
@@ -62,7 +63,10 @@
 .menu-overlay {
     display: none;
     position: fixed;
-    top: 0; left: 0; width: 100vw; height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background: #1e1e1ecc;
     z-index: 1100;
     opacity: 0;
@@ -82,11 +86,11 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 2.5rem;
     background: #fff;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     border-radius: 0.5rem;
     padding: 0.5rem 0;
     min-width: 100px;
@@ -139,9 +143,9 @@
         align-items: flex-start;
         padding-top: 2rem;
         gap: 1.5rem;
-        box-shadow: -2px 0 16px rgba(0,0,0,0.15);
+        box-shadow: -2px 0 16px rgba(0, 0, 0, 0.15);
         transform: translateX(100%);
-        transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1102;
     }
 
@@ -179,6 +183,7 @@
         background: transparent;
         padding: 0;
     }
+
     .dropdown-menu a {
         color: #fff;
         padding-left: 2.5rem;
