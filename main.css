@@ -52,10 +52,9 @@ li {
     backdrop-filter: blur(5px);
 }
 
-.hero-content h1,
-p {
+.hero-content h1,p {
     color: #fff;
-    margin: 0;
+    margin: 1;
 }
 
 .useful-links a {
