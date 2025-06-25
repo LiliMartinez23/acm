@@ -98,6 +98,10 @@
     flex-direction: column;
 }
 
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
+
 .dropdown-menu a {
     display: block;
     padding: 0.5rem 1.25rem;
@@ -110,13 +114,8 @@
 .dropdown-menu a:hover {
     background: #f0f6fb;
     color: #00a2ff;
+    
 }
-
-/* Show dropdown when open */
-.dropdown.open .dropdown-menu {
-    display: flex;
-}
-
 
 
 @media (max-width: 900px) {
