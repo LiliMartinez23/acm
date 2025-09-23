@@ -26,12 +26,12 @@ ACM-TAMUSA is Texas A&M University-San Antonio's leading computing-focused stude
 ### Technologies
 This website is developed using HTML, CSS, and JavaScript.
 ### Running the project
-To view this project, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/) and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extention.
+To view this project, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/)
 
 1. Clone this project onto your local machine
-2. Open the cloned repository folder using Visual Studio Code
-3. Ensure that the "Live Server" plugin is installed, and open the file `index.html` with Live Server
-4. On your web browser, navigate to [http://localhost:5500/](http://localhost:5500/)
+2. In the repo directory, type this command
+```npm start```
+3. On the web browser, go to http://localhost:8080
 
 You should now be able to view the website. 
 
