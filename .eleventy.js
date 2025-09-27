@@ -1,14 +1,17 @@
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+    const { HtmlBasePlugin } = await import("@11ty/eleventy");
 
-    eleventyConfig.addPassthroughCopy('./src/img');
-    eleventyConfig.addPassthroughCopy('./src/css');
-    eleventyConfig.addPassthroughCopy('./src/js');
-    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+    eleventyConfig.addPlugin(HtmlBasePlugin);
+
+    eleventyConfig.addPassthroughCopy("./src/img");
+    eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addPassthroughCopy("./src/js");
+
+    // SHORTCODES
+    eleventyConfig.addNunjucksShortcode("year", () => `${new Date().getFullYear()}`);
 
     return {
-        dir: {
-            input: "src",
-            output: "public"
-        }
-    }
-}
+        pathPrefix: process.env.ELEVENTY_ENV === "production" ? "" : "/acm-tamusa/",
+        dir: { input: "src", output: "_site", includes: "_includes" }
+    };
+};
