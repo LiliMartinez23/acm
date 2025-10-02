@@ -12,6 +12,7 @@ module.exports = async function (eleventyConfig) {
 
     return {
         pathPrefix: process.env.ELEVENTY_ENV === "production" ? "" : "/acm/",
-        dir: { input: "src", output: "_site", includes: "_includes" }
+        // deploy to docs folder, so github pages will recognize the output code as the "root"
+        dir: { input: "src", output: "docs", includes: "_includes" }
     };
 };
