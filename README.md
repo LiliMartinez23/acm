@@ -30,8 +30,12 @@ To view this project, it is recommended to use [Visual Studio Code](https://code
 
 1. Clone this project onto your local machine
 2. In the repo directory, type this command
-```npm start```
-3. On the web browser, go to http://localhost:8080
+
+```bundle install```
+
+```bundle exec jekyll serve```
+
+3. On the web browser, go to http://127.0.0.1:4000/acm/
 
 You should now be able to view the website. 
 
