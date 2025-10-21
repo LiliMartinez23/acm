@@ -1,0 +1,9 @@
+title: acm-tamusa
+timezone: UTC
+markdown: kramdown
+collections:
+  posts:
+    output: true
+title: acm-tamusa
+url: https://Tr-Do.github.io
+baseurl: /acm
